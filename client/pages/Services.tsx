@@ -324,9 +324,9 @@ export default function Services() {
                 Get Free Quote
               </Button>
             </Link>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-4 text-white border-white hover:bg-white hover:text-blue-600">
-              Schedule Consultation
-            </Button>
+           <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
+               Schedule Consultation
+              </Button>
           </div>
         </div>
       </section>
