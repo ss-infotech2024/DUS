@@ -396,7 +396,7 @@ export default function Contact() {
               <Phone className="mr-2 h-5 w-5" />
               Call Now
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-4 text-white border-white hover:bg-white hover:text-blue-600">
+             <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
               <HeadphonesIcon className="mr-2 h-5 w-5" />
               Request Callback
             </Button>
