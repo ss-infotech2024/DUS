@@ -62,7 +62,7 @@ const testimonials = [
   {
     name: 'Sarah Johnson',
     role: 'CTO at TechStart',
-    content: 'CodeForge Solutions delivered an exceptional web application that exceeded our expectations. Their team is professional, skilled, and truly understands modern development.',
+    content: 'DUS delivered an exceptional web application that exceeded our expectations. Their team is professional, skilled, and truly understands modern development.',
     rating: 5
   },
   {
@@ -142,7 +142,7 @@ export default function Index() {
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Excellence</span>
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                CodeForge Solutions is a premier software development company that bridges the gap between
+                DUS is a premier software development company that bridges the gap between
                 innovative technology solutions and talent development. We create robust, scalable applications
                 for businesses while empowering the next generation of developers.
               </p>

@@ -25,7 +25,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
               <Code2 className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold text-foreground">CodeForge Solutions</span>
+              <span className="text-xl font-bold text-foreground">DUS</span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -102,7 +102,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <Code2 className="h-8 w-8 text-blue-500" />
-                <span className="text-xl font-bold">CodeForge Solutions</span>
+                <span className="text-xl font-bold">DUS</span>
               </div>
               <p className="text-gray-300 mb-6 max-w-md">
                 Innovating Code. Empowering Talent. We specialize in client-based software development, 
@@ -161,7 +161,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="border-t border-gray-800 mt-8 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-sm">
-                © 2024 CodeForge Solutions. All rights reserved.
+                © 2024 DUS. All rights reserved.
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <Link to="/privacy" className="text-gray-400 hover:text-blue-500 text-sm transition-colors">
