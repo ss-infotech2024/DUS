@@ -29,7 +29,7 @@ const services = [
     description: 'Custom web applications built with modern frameworks',
     features: ['Responsive Design', 'Progressive Web Apps', 'E-commerce Solutions', 'CMS Development'],
     technologies: ['React', 'Next.js', 'Vue.js', 'Angular', 'Node.js', 'PHP'],
-    startingPrice: '$2,999',
+    // startingPrice: '$2,999',
     timeline: '4-12 weeks'
   },
   {
@@ -38,7 +38,7 @@ const services = [
     description: 'Native and cross-platform mobile applications',
     features: ['iOS & Android', 'Cross-platform', 'App Store Optimization', 'Push Notifications'],
     technologies: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'Ionic'],
-    startingPrice: '$4,999',
+    // startingPrice: '$4,999',
     timeline: '6-16 weeks'
   },
   {
@@ -47,36 +47,36 @@ const services = [
     description: 'Robust APIs and seamless third-party integrations',
     features: ['REST API', 'GraphQL', 'Microservices', 'Payment Gateways'],
     technologies: ['Node.js', 'Python', 'Java', 'MongoDB', 'PostgreSQL'],
-    startingPrice: '$1,999',
+    // startingPrice: '$1,999',
     timeline: '2-8 weeks'
   },
-  {
-    icon: Cloud,
-    title: 'Cloud Solutions',
-    description: 'Scalable cloud infrastructure and deployment',
-    features: ['AWS/Azure Setup', 'DevOps', 'Auto-scaling', 'Monitoring'],
-    technologies: ['AWS', 'Azure', 'Docker', 'Kubernetes', 'Terraform'],
-    startingPrice: '$3,499',
-    timeline: '3-10 weeks'
-  },
-  {
-    icon: Palette,
-    title: 'UI/UX Design',
-    description: 'Beautiful, user-centric design solutions',
-    features: ['User Research', 'Wireframing', 'Prototyping', 'Design Systems'],
-    technologies: ['Figma', 'Adobe XD', 'Sketch', 'InVision'],
-    startingPrice: '$1,499',
-    timeline: '2-6 weeks'
-  },
-  {
-    icon: Shield,
-    title: 'Maintenance & Support',
-    description: '24/7 technical support and ongoing maintenance',
-    features: ['Bug Fixes', 'Security Updates', 'Performance Optimization', 'Feature Updates'],
-    technologies: ['Monitoring Tools', 'Analytics', 'Testing Frameworks'],
-    startingPrice: '$499/month',
-    timeline: 'Ongoing'
-  }
+  // {
+  //   icon: Cloud,
+  //   title: 'Cloud Solutions',
+  //   description: 'Scalable cloud infrastructure and deployment',
+  //   features: ['AWS/Azure Setup', 'DevOps', 'Auto-scaling', 'Monitoring'],
+  //   technologies: ['AWS', 'Azure', 'Docker', 'Kubernetes', 'Terraform'],
+  //   startingPrice: '$3,499',
+  //   timeline: '3-10 weeks'
+  // },
+  // {
+  //   icon: Palette,
+  //   title: 'UI/UX Design',
+  //   description: 'Beautiful, user-centric design solutions',
+  //   features: ['User Research', 'Wireframing', 'Prototyping', 'Design Systems'],
+  //   technologies: ['Figma', 'Adobe XD', 'Sketch', 'InVision'],
+  //   startingPrice: '$1,499',
+  //   timeline: '2-6 weeks'
+  // },
+  // {
+  //   icon: Shield,
+  //   title: 'Maintenance & Support',
+  //   description: '24/7 technical support and ongoing maintenance',
+  //   features: ['Bug Fixes', 'Security Updates', 'Performance Optimization', 'Feature Updates'],
+  //   technologies: ['Monitoring Tools', 'Analytics', 'Testing Frameworks'],
+  //   startingPrice: '$499/month',
+  //   timeline: 'Ongoing'
+  // }
 ];
 
 const portfolioItems = [
@@ -84,7 +84,7 @@ const portfolioItems = [
     title: 'E-commerce Platform',
     category: 'Web Development',
     description: 'Complete online shopping platform with payment integration',
-    image: '/placeholder.svg',
+    image: "../../../client/images/img1.png" ,
     technologies: ['React', 'Node.js', 'MongoDB', 'Stripe']
   },
   {
@@ -169,10 +169,10 @@ export default function Services() {
                       <Clock className="h-4 w-4 mr-1" />
                       {service.timeline}
                     </span>
-                    <span className="flex items-center text-green-600 font-semibold">
+                    {/* <span className="flex items-center text-green-600 font-semibold">
                       <DollarSign className="h-4 w-4 mr-1" />
                       {service.startingPrice}
-                    </span>
+                    </span> */}
                   </div>
                   
                   <div className="space-y-2">

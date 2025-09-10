@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
-import { 
-  ChevronLeft, 
-  ChevronRight, 
+import {
+  ChevronLeft,
+  ChevronRight,
   Play,
   Briefcase,
   GraduationCap,
@@ -27,13 +27,13 @@ const slides = [
   },
   {
     id: 2,
-    title: "Learn. Build. Succeed.",
-    subtitle: "Your Tech Career Starts Here.",
-    description: "Join our comprehensive internship and training programs designed to transform students into industry-ready developers.",
-    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-    ctaText: "Join Training",
-    badge: "🎓 90% Placement Rate",
-    stats: { label: "Students Trained", value: "2000+" }
+    title: "Design. Develop. Deploy.",
+    subtitle: "Your Digital Presence Starts Here.",
+    description: "We build powerful, scalable websites and mobile applications tailored to your business needs — from idea to launch.",
+    image: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    ctaText: "Get Started",
+    badge: "🚀 Expert Web Solutions",
+    stats: { label: "Projects Delivered", value: "500+" }
   },
   {
     id: 3,
@@ -196,23 +196,22 @@ export function HeroSlider() {
           >
             <ChevronLeft className="h-5 w-5" />
           </button>
-          
+
           <div className="flex space-x-2">
             {slides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentSlide 
-                    ? 'bg-white w-8' 
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide
+                    ? 'bg-white w-8'
                     : 'bg-white/40 hover:bg-white/60'
-                }`}
+                  }`}
                 onMouseEnter={() => setIsAutoPlaying(false)}
                 onMouseLeave={() => setIsAutoPlaying(true)}
               />
             ))}
           </div>
-          
+
           <button
             onClick={nextSlide}
             className="p-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 transition-all duration-300"
@@ -231,11 +230,10 @@ export function HeroSlider() {
             <button
               key={slide.id}
               onClick={() => setCurrentSlide(index)}
-              className={`block w-1 h-12 rounded-full transition-all duration-300 ${
-                index === currentSlide 
-                  ? 'bg-white' 
+              className={`block w-1 h-12 rounded-full transition-all duration-300 ${index === currentSlide
+                  ? 'bg-white'
                   : 'bg-white/30 hover:bg-white/60'
-              }`}
+                }`}
               onMouseEnter={() => setIsAutoPlaying(false)}
               onMouseLeave={() => setIsAutoPlaying(true)}
             />

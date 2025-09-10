@@ -31,13 +31,13 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Phone Numbers',
-    details: ['+1 (555) 123-4567', '+1 (555) 765-4321'],
+    details: ['+91 8208265374', '+1 (555) 765-4321'],
     description: 'Call us during business hours'
   },
   {
     icon: MapPin,
     title: 'Office Address',
-    details: ['123 Tech Street, Suite 400', 'San Francisco, CA 94105'],
+    details: ['123 Tech Street, Suite 400', 'Nagpur 94105'],
     description: 'Visit our office'
   },
   {
@@ -59,7 +59,7 @@ const departments = [
   {
     title: 'Sales & Business',
     email: 'sales@codeforgesolutions.com',
-    phone: '+1 (555) 123-4567',
+    phone: '+91 8208265374',
     description: 'For project inquiries and business partnerships'
   },
   {
@@ -95,10 +95,10 @@ const faqs = [
     question: 'Do you offer post-launch support?',
     answer: 'Yes, we provide ongoing maintenance and support packages. Our team is available 24/7 for critical issues and regular updates.'
   },
-  {
-    question: 'How can I apply for internship programs?',
-    answer: 'Visit our Internship page and fill out the application form. You can also contact our admissions team directly for guidance.'
-  }
+  // {
+  //   question: 'How can I apply for internship programs?',
+  //   answer: 'Visit our Internship page and fill out the application form. You can also contact our admissions team directly for guidance.'
+  // }
 ];
 
 export default function Contact() {
@@ -223,8 +223,8 @@ export default function Contact() {
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="project">Project Development</SelectItem>
-                          <SelectItem value="training">Training Programs</SelectItem>
-                          <SelectItem value="internship">Internship Application</SelectItem>
+                          {/* <SelectItem value="training">Training Programs</SelectItem> */}
+                          {/* <SelectItem value="internship">Internship Application</SelectItem> */}
                           <SelectItem value="support">Technical Support</SelectItem>
                           <SelectItem value="partnership">Partnership</SelectItem>
                           <SelectItem value="other">Other</SelectItem>
@@ -283,7 +283,7 @@ export default function Contact() {
                   <div className="text-center">
                     <MapPin className="h-16 w-16 text-gray-400 mx-auto mb-4" />
                     <p className="text-gray-500">Interactive Google Map</p>
-                    <p className="text-sm text-gray-400">123 Tech Street, San Francisco, CA 94105</p>
+                    <p className="text-sm text-gray-400">123 Tech Street, Nagpur 94105</p>
                   </div>
                 </div>
               </Card>
@@ -296,7 +296,7 @@ export default function Contact() {
                     <Building className="h-5 w-5 text-blue-600 mt-1" />
                     <div>
                       <p className="font-medium">Address</p>
-                      <p className="text-gray-600">123 Tech Street, Suite 400<br />San Francisco, CA 94105</p>
+                      <p className="text-gray-600">123 Tech Street, Suite 400<br />Nagpur 94105</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">

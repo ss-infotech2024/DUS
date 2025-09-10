@@ -60,19 +60,19 @@ const technologies = [
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
+    name: 'Piyush singh',
     role: 'CTO at TechStart',
     content: 'DUS delivered an exceptional web application that exceeded our expectations. Their team is professional, skilled, and truly understands modern development.',
     rating: 5
   },
   {
-    name: 'Michael Chen',
+    name: 'Lucky Khope',
     role: 'Founder at InnovateLab',
     content: 'Working with CodeForge was a game-changer for our startup. They built our entire platform and provided excellent ongoing support.',
     rating: 5
   },
   {
-    name: 'Emily Rodriguez',
+    name: 'Ayush Chawhan ',
     role: 'Product Manager at DataFlow',
     content: 'The mobile app they developed for us has been a huge success. Clean code, great performance, and delivered on time.',
     rating: 5

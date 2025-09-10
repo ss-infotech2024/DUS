@@ -55,11 +55,11 @@ const milestones = [
     title: 'First Major Client',
     description: 'Delivered our first enterprise-level web application successfully.'
   },
-  {
-    year: '2021',
-    title: 'Training Programs Launch',
-    description: 'Launched internship and training programs for students.'
-  },
+  // {
+  //   year: '2021',
+  //   title: 'Training Programs Launch',
+  //   description: 'Launched internship and training programs for students.'
+  // },
   {
     year: '2022',
     title: 'Team Expansion',
@@ -115,7 +115,7 @@ const teamMembers = [
     }
   },
   {
-    name: 'Sarah Johnson',
+    name: 'Piyush singh',
     role: 'Lead Frontend Developer',
     image: '/placeholder.svg',
     bio: 'UI/UX expert specializing in React and modern frontend technologies.',

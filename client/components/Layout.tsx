@@ -6,8 +6,8 @@ import { useState } from 'react';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Services', href: '/services' },
-  { name: 'Internship', href: '/internship' },
-  { name: 'Courses', href: '/courses' },
+  // { name: 'Internship', href: '/internship' },
+  // { name: 'Courses', href: '/courses' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
 ];
@@ -148,11 +148,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="h-4 w-4 text-blue-500" />
-                  <span className="text-gray-300">+1 (555) 123-4567</span>
+                  <span className="text-gray-300">+91 8208265374</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <MapPin className="h-4 w-4 text-blue-500" />
-                  <span className="text-gray-300">San Francisco, CA</span>
+                  <span className="text-gray-300">Nagpur</span>
                 </div>
               </div>
             </div>
