@@ -433,7 +433,7 @@ export default function About() {
             <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
               Get in Touch
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-4 text-white border-white hover:bg-white hover:text-blue-600">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-4 text-blue-600 border-white hover:bg-grey-400 hover:text-blue-600">
               Schedule a Meeting
             </Button>
           </div>
