@@ -1,13 +1,11 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { 
-  Globe, 
-  Smartphone, 
-  Database, 
-  Shield, 
-  Code2,
+import {
+  Globe,
+  Smartphone,
+  Database,
+  Shield,
   Cloud,
   Palette,
   Search,
@@ -21,7 +19,6 @@ import {
   DollarSign
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { Line } from 'recharts';
 
 const services = [
   {
@@ -30,7 +27,6 @@ const services = [
     description: 'Custom web applications built with modern frameworks',
     features: ['Responsive Design', 'Progressive Web Apps', 'E-commerce Solutions', 'CMS Development'],
     technologies: ['React', 'Next.js', 'Vue.js', 'Angular', 'Node.js', 'PHP'],
-    // startingPrice: '$2,999',
     timeline: '4-12 weeks'
   },
   {
@@ -39,7 +35,6 @@ const services = [
     description: 'Native and cross-platform mobile applications',
     features: ['iOS & Android', 'Cross-platform', 'App Store Optimization', 'Push Notifications'],
     technologies: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'Ionic'],
-    // startingPrice: '$4,999',
     timeline: '6-16 weeks'
   },
   {
@@ -48,36 +43,8 @@ const services = [
     description: 'Robust APIs and seamless third-party integrations',
     features: ['REST API', 'GraphQL', 'Microservices', 'Payment Gateways'],
     technologies: ['Node.js', 'Python', 'Java', 'MongoDB', 'PostgreSQL'],
-    // startingPrice: '$1,999',
     timeline: '2-8 weeks'
-  },
-  // {
-  //   icon: Cloud,
-  //   title: 'Cloud Solutions',
-  //   description: 'Scalable cloud infrastructure and deployment',
-  //   features: ['AWS/Azure Setup', 'DevOps', 'Auto-scaling', 'Monitoring'],
-  //   technologies: ['AWS', 'Azure', 'Docker', 'Kubernetes', 'Terraform'],
-  //   startingPrice: '$3,499',
-  //   timeline: '3-10 weeks'
-  // },
-  // {
-  //   icon: Palette,
-  //   title: 'UI/UX Design',
-  //   description: 'Beautiful, user-centric design solutions',
-  //   features: ['User Research', 'Wireframing', 'Prototyping', 'Design Systems'],
-  //   technologies: ['Figma', 'Adobe XD', 'Sketch', 'InVision'],
-  //   startingPrice: '$1,499',
-  //   timeline: '2-6 weeks'
-  // },
-  // {
-  //   icon: Shield,
-  //   title: 'Maintenance & Support',
-  //   description: '24/7 technical support and ongoing maintenance',
-  //   features: ['Bug Fixes', 'Security Updates', 'Performance Optimization', 'Feature Updates'],
-  //   technologies: ['Monitoring Tools', 'Analytics', 'Testing Frameworks'],
-  //   startingPrice: '$499/month',
-  //   timeline: 'Ongoing'
-  // }
+  }
 ];
 
 const portfolioItems = [
@@ -85,21 +52,21 @@ const portfolioItems = [
     title: 'E-commerce Platform',
     category: 'Web Development',
     description: 'Complete online shopping platform with payment integration',
-    image: "../img1.png",
+    image: "https://cdn.dribbble.com/userupload/43970857/file/original-c74b02087bc7220d1bde4a9543f194ee.png?resize=752x&vertical=center",
     technologies: ['React', 'Node.js', 'MongoDB', 'Stripe']
   },
   {
     title: 'Healthcare Mobile App',
     category: 'Mobile Development',
     description: 'Patient management system with appointment booking',
-    image: '/placeholder.svg',
+    image: 'https://cdn.dribbble.com/userupload/43184395/file/original-7b1d4e8e77558c880ebb0fa7f62658ab.png?resize=752x&vertical=center',
     technologies: ['React Native', 'Firebase', 'Redux']
   },
   {
     title: 'Analytics Dashboard',
     category: 'Web Development',
     description: 'Real-time data visualization and reporting tool',
-    image:" https://cdn.dribbble.com/userupload/42841536/file/original-2308b49102a7b16079f65c89cb60a33a.webp?resize=752x&vertical=center",
+    image: "https://cdn.dribbble.com/userupload/42841536/file/original-2308b49102a7b16079f65c89cb60a33a.webp?resize=752x&vertical=center",
     technologies: ['Vue.js', 'D3.js', 'Python', 'PostgreSQL']
   }
 ];
@@ -142,12 +109,10 @@ export default function Services() {
             Our Services
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Comprehensive software development services to transform your ideas into powerful digital solutions. 
+            Comprehensive software development services to transform your ideas into powerful digital solutions.
             From web applications to mobile apps, we've got you covered.
           </p>
-          <Button size="lg">
-            Get Free Consultation
-          </Button>
+          <Button size="lg">Get Free Consultation</Button>
         </div>
       </section>
 
@@ -160,9 +125,7 @@ export default function Services() {
                 <CardHeader className="pb-4">
                   <service.icon className="h-12 w-12 text-blue-600 mb-4" />
                   <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
-                  <CardDescription className="text-gray-600">
-                    {service.description}
-                  </CardDescription>
+                  <CardDescription className="text-gray-600">{service.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center justify-between text-sm">
@@ -170,12 +133,8 @@ export default function Services() {
                       <Clock className="h-4 w-4 mr-1" />
                       {service.timeline}
                     </span>
-                    {/* <span className="flex items-center text-green-600 font-semibold">
-                      <DollarSign className="h-4 w-4 mr-1" />
-                      {service.startingPrice}
-                    </span> */}
                   </div>
-                  
+
                   <div className="space-y-2">
                     <h4 className="font-semibold text-sm">Key Features:</h4>
                     <ul className="space-y-1">
@@ -199,9 +158,7 @@ export default function Services() {
                     </div>
                   </div>
 
-                  <Button className="w-full mt-4">
-                    Request Quote
-                  </Button>
+                  <Button className="w-full mt-4">Request Quote</Button>
                 </CardContent>
               </Card>
             ))}
@@ -213,14 +170,12 @@ export default function Services() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Our Development Process
-            </h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Development Process</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               A proven methodology that ensures successful project delivery every time
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-5 gap-8">
             {processSteps.map((step, index) => (
               <div key={index} className="text-center">
@@ -244,9 +199,7 @@ export default function Services() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Our Recent Work
-            </h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Recent Work</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Take a look at some of our successful projects and see what we can create for you
             </p>
@@ -255,9 +208,16 @@ export default function Services() {
           <div className="grid md:grid-cols-3 gap-8">
             {portfolioItems.map((item, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
+                {/* Use image instead of icon */}
                 <div className="aspect-video bg-gray-100 flex items-center justify-center">
-                  <Code2 className="h-12 w-12 text-gray-400" />
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="object-cover w-full h-full"
+                    loading="lazy"
+                  />
                 </div>
+
                 <CardContent className="p-6">
                   <Badge variant="outline" className="mb-2">{item.category}</Badge>
                   <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
@@ -280,9 +240,7 @@ export default function Services() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose DUS?
-            </h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Why Choose DUS?</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -313,9 +271,7 @@ export default function Services() {
       {/* CTA Section */}
       <section className="py-20 bg-blue-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-            Ready to Start Your Project?
-          </h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Ready to Start Your Project?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Let's discuss your requirements and create a custom solution for your business.
           </p>
@@ -325,9 +281,9 @@ export default function Services() {
                 Get Free Quote
               </Button>
             </Link>
-           <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
-               Schedule Consultation
-              </Button>
+            <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
+              Schedule Consultation
+            </Button>
           </div>
         </div>
       </section>
