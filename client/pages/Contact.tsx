@@ -31,13 +31,13 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Phone Numbers',
-    details: ['+91 8208265374', '+1 (555) 765-4321'],
+    details: ['+91 8208265374', '+91 8208265374'],
     description: 'Call us during business hours'
   },
   {
     icon: MapPin,
     title: 'Office Address',
-    details: ['123 Tech Street, Suite 400', 'Nagpur 94105'],
+    details: ['Nagpur'],
     description: 'Visit our office'
   },
   {
@@ -65,19 +65,19 @@ const departments = [
   {
     title: 'Technical Support',
     email: 'support@codeforgesolutions.com',
-    phone: '+1 (555) 765-4321',
+    phone: '+91 8208265374',
     description: 'For technical assistance and maintenance'
   },
   {
     title: 'Training & Admissions',
     email: 'admissions@codeforgesolutions.com',
-    phone: '+1 (555) 987-6543',
+    phone: '+91 8208265374',
     description: 'For course inquiries and admissions'
   },
   {
     title: 'HR & Careers',
     email: 'careers@codeforgesolutions.com',
-    phone: '+1 (555) 456-7890',
+    phone: '+91 8208265374',
     description: 'For job opportunities and recruitment'
   }
 ];
@@ -282,8 +282,8 @@ export default function Contact() {
                 <div className="aspect-video bg-gray-100 flex items-center justify-center">
                   <div className="text-center">
                     <MapPin className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-500">Interactive Google Map</p>
-                    <p className="text-sm text-gray-400">123 Tech Street, Nagpur 94105</p>
+                    <p className="text-gray-500">Dynamite Universal Solutions</p>
+                    <p className="text-sm text-gray-400">Nagpur </p>
                   </div>
                 </div>
               </Card>
@@ -296,7 +296,7 @@ export default function Contact() {
                     <Building className="h-5 w-5 text-blue-600 mt-1" />
                     <div>
                       <p className="font-medium">Address</p>
-                      <p className="text-gray-600">123 Tech Street, Suite 400<br />Nagpur 94105</p>
+                      <p className="text-gray-600">Nagpur </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">

@@ -21,6 +21,7 @@ import {
   DollarSign
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Line } from 'recharts';
 
 const services = [
   {
@@ -84,7 +85,7 @@ const portfolioItems = [
     title: 'E-commerce Platform',
     category: 'Web Development',
     description: 'Complete online shopping platform with payment integration',
-    image: "../../../client/images/img1.png" ,
+    image: "../img1.png",
     technologies: ['React', 'Node.js', 'MongoDB', 'Stripe']
   },
   {
@@ -98,7 +99,7 @@ const portfolioItems = [
     title: 'Analytics Dashboard',
     category: 'Web Development',
     description: 'Real-time data visualization and reporting tool',
-    image: '/placeholder.svg',
+    image:" https://cdn.dribbble.com/userupload/42841536/file/original-2308b49102a7b16079f65c89cb60a33a.webp?resize=752x&vertical=center",
     technologies: ['Vue.js', 'D3.js', 'Python', 'PostgreSQL']
   }
 ];
