@@ -10,7 +10,11 @@ const navigation = [
   // { name: 'Courses', href: '/courses' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
+
 ];
+
+import Logo from "../images/Logo .png";  
+
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -24,8 +28,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <Code2 className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold text-foreground">DUS</span>
+             
+    <div className="flex items-center space-x-2">
+      <img
+        src={Logo}
+        alt="Logo"
+        className="h-10 w-auto sm:h-12 md:h-14"
+      />
+    </div>
             </Link>
 
             {/* Desktop Navigation */}
