@@ -103,12 +103,12 @@ export default function Services() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 via-white to-gray-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+      <section className="bg-gradient-to-br from-blue-50 via-white to-gray-50 py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto text-center">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Our Services
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Comprehensive software development services to transform your ideas into powerful digital solutions.
             From web applications to mobile apps, we've got you covered.
           </p>
@@ -117,24 +117,23 @@ export default function Services() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="py-12 sm:py-20 bg-white px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
+              <Card key={index} className="p-6 hover:shadow-lg transition-shadow h-full flex flex-col">
                 <CardHeader className="pb-4">
                   <service.icon className="h-12 w-12 text-blue-600 mb-4" />
-                  <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
+                  <CardTitle className="text-lg sm:text-xl mb-2">{service.title}</CardTitle>
                   <CardDescription className="text-gray-600">{service.description}</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-center justify-between text-sm">
+                <CardContent className="space-y-4 flex-1 flex flex-col justify-between">
+                  <div className="flex items-center justify-between text-sm mb-2">
                     <span className="flex items-center text-gray-500">
                       <Clock className="h-4 w-4 mr-1" />
                       {service.timeline}
                     </span>
                   </div>
-
                   <div className="space-y-2">
                     <h4 className="font-semibold text-sm">Key Features:</h4>
                     <ul className="space-y-1">
@@ -146,7 +145,6 @@ export default function Services() {
                       ))}
                     </ul>
                   </div>
-
                   <div className="space-y-2">
                     <h4 className="font-semibold text-sm">Technologies:</h4>
                     <div className="flex flex-wrap gap-1">
@@ -157,7 +155,6 @@ export default function Services() {
                       ))}
                     </div>
                   </div>
-
                   <Button className="w-full mt-4">Request Quote</Button>
                 </CardContent>
               </Card>
@@ -167,28 +164,27 @@ export default function Services() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Development Process</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+      <section className="py-12 sm:py-20 bg-gray-50 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Development Process</h2>
+            <p className="text-base sm:text-xl text-gray-600 max-w-2xl mx-auto">
               A proven methodology that ensures successful project delivery every time
             </p>
           </div>
-
-          <div className="grid md:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {processSteps.map((step, index) => (
               <div key={index} className="text-center">
                 <div className="relative mb-6">
-                  <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto">
                     {step.step}
                   </div>
                   {index < processSteps.length - 1 && (
                     <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gray-300 -z-10"></div>
                   )}
                 </div>
-                <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
-                <p className="text-gray-600 text-sm">{step.description}</p>
+                <h3 className="text-base sm:text-lg font-semibold mb-2">{step.title}</h3>
+                <p className="text-gray-600 text-xs sm:text-sm">{step.description}</p>
               </div>
             ))}
           </div>
@@ -196,19 +192,17 @@ export default function Services() {
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Recent Work</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+      <section className="py-12 sm:py-20 bg-white px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Recent Work</h2>
+            <p className="text-base sm:text-xl text-gray-600 max-w-2xl mx-auto">
               Take a look at some of our successful projects and see what we can create for you
             </p>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {portfolioItems.map((item, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-                {/* Use image instead of icon */}
+              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col h-full">
                 <div className="aspect-video bg-gray-100 flex items-center justify-center">
                   <img
                     src={item.image}
@@ -217,12 +211,11 @@ export default function Services() {
                     loading="lazy"
                   />
                 </div>
-
-                <CardContent className="p-6">
+                <CardContent className="p-6 flex-1 flex flex-col">
                   <Badge variant="outline" className="mb-2">{item.category}</Badge>
-                  <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                  <h3 className="text-base sm:text-lg font-semibold mb-2">{item.title}</h3>
                   <p className="text-gray-600 mb-4">{item.description}</p>
-                  <div className="flex flex-wrap gap-1">
+                  <div className="flex flex-wrap gap-1 mt-auto">
                     {item.technologies.map((tech, i) => (
                       <Badge key={i} variant="secondary" className="text-xs">
                         {tech}
@@ -237,42 +230,41 @@ export default function Services() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Why Choose DUS?</h2>
+      <section className="py-12 sm:py-20 bg-gray-50 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Why Choose DUS?</h2>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <div className="text-center">
-              <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Expert Team</h3>
-              <p className="text-gray-600">Skilled developers with 5+ years experience</p>
+              <Users className="h-10 w-10 sm:h-12 sm:w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-base sm:text-lg font-semibold mb-2">Expert Team</h3>
+              <p className="text-gray-600 text-sm">Skilled developers with 5+ years experience</p>
             </div>
             <div className="text-center">
-              <Clock className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">On-Time Delivery</h3>
-              <p className="text-gray-600">95% projects delivered on or before deadline</p>
+              <Clock className="h-10 w-10 sm:h-12 sm:w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-base sm:text-lg font-semibold mb-2">On-Time Delivery</h3>
+              <p className="text-gray-600 text-sm">95% projects delivered on or before deadline</p>
             </div>
             <div className="text-center">
-              <Star className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Quality Assurance</h3>
-              <p className="text-gray-600">Rigorous testing and code review process</p>
+              <Star className="h-10 w-10 sm:h-12 sm:w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-base sm:text-lg font-semibold mb-2">Quality Assurance</h3>
+              <p className="text-gray-600 text-sm">Rigorous testing and code review process</p>
             </div>
             <div className="text-center">
-              <Shield className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">24/7 Support</h3>
-              <p className="text-gray-600">Ongoing maintenance and technical support</p>
+              <Shield className="h-10 w-10 sm:h-12 sm:w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-base sm:text-lg font-semibold mb-2">24/7 Support</h3>
+              <p className="text-gray-600 text-sm">Ongoing maintenance and technical support</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Ready to Start Your Project?</h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+      <section className="py-12 sm:py-20 bg-blue-600 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">Ready to Start Your Project?</h2>
+          <p className="text-base sm:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Let's discuss your requirements and create a custom solution for your business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

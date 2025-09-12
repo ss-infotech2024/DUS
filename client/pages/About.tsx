@@ -162,24 +162,21 @@ export default function About() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 via-white to-gray-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              About DUS
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+      <section className="bg-gradient-to-br from-blue-50 via-white to-gray-50 py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10 sm:mb-16">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">About DUS</h1>
+            <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               We are a passionate team of developers, educators, and innovators dedicated to creating 
               exceptional software solutions while nurturing the next generation of tech talent.
             </p>
           </div>
-
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
             {stats.map((stat, index) => (
               <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow">
                 <stat.icon className="h-10 w-10 text-blue-600 mx-auto mb-3" />
-                <div className="text-2xl lg:text-3xl font-bold text-gray-900 mb-1">
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-1">
                   {stat.number}
                 </div>
                 <div className="text-gray-600">{stat.label}</div>
@@ -190,36 +187,35 @@ export default function About() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12">
+      <section className="py-12 sm:py-20 bg-white px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
             {/* Mission */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
+            <Card className="p-6 sm:p-8 hover:shadow-lg transition-shadow">
               <CardHeader className="pb-6">
                 <div className="flex items-center space-x-3 mb-4">
                   <Target className="h-10 w-10 text-blue-600" />
-                  <CardTitle className="text-2xl">Our Mission</CardTitle>
+                  <CardTitle className="text-xl sm:text-2xl">Our Mission</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                   To bridge the gap between innovative technology solutions and skilled talent development. 
                   We empower businesses with cutting-edge software while simultaneously nurturing students 
                   to become industry-ready developers through comprehensive training and real-world experience.
                 </p>
               </CardContent>
             </Card>
-
             {/* Vision */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
+            <Card className="p-6 sm:p-8 hover:shadow-lg transition-shadow">
               <CardHeader className="pb-6">
                 <div className="flex items-center space-x-3 mb-4">
                   <Eye className="h-10 w-10 text-blue-600" />
-                  <CardTitle className="text-2xl">Our Vision</CardTitle>
+                  <CardTitle className="text-xl sm:text-2xl">Our Vision</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                   To become the leading software development company that not only delivers exceptional 
                   digital solutions but also creates a sustainable ecosystem for continuous learning and 
                   innovation, empowering the next generation of tech leaders.
@@ -231,22 +227,19 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Our Core Values
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+      <section className="py-12 sm:py-20 bg-gray-50 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Core Values</h2>
+            <p className="text-base sm:text-xl text-gray-600 max-w-2xl mx-auto">
               The principles that guide everything we do and shape our company culture
             </p>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {values.map((value, index) => (
               <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow">
                 <value.icon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-3">{value.title}</h3>
+                <h3 className="text-base sm:text-lg font-semibold mb-3">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
               </Card>
             ))}
@@ -255,22 +248,19 @@ export default function About() {
       </section>
 
       {/* Company Journey */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Our Journey
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+      <section className="py-12 sm:py-20 bg-white px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Journey</h2>
+            <p className="text-base sm:text-xl text-gray-600 max-w-2xl mx-auto">
               From a startup vision to an established leader in software development and education
             </p>
           </div>
-
           <div className="relative">
             <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-gray-300"></div>
             <div className="space-y-8">
               {milestones.map((milestone, index) => (
-                <div key={index} className={`relative flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+                <div key={index} className={`relative flex flex-col lg:flex-row items-center ${index % 2 === 0 ? 'lg:justify-start' : 'lg:justify-end'}`}>
                   <div className={`w-full lg:w-5/12 ${index % 2 === 0 ? 'lg:pr-8' : 'lg:pl-8'}`}>
                     <Card className="p-6 hover:shadow-lg transition-shadow">
                       <CardHeader className="pb-3">
@@ -278,7 +268,7 @@ export default function About() {
                           <Badge variant="secondary" className="text-sm font-semibold">
                             {milestone.year}
                           </Badge>
-                          <CardTitle className="text-lg">{milestone.title}</CardTitle>
+                          <CardTitle className="text-base sm:text-lg">{milestone.title}</CardTitle>
                         </div>
                       </CardHeader>
                       <CardContent>
@@ -295,29 +285,25 @@ export default function About() {
       </section>
 
       {/* Team */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Meet Our Team
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+      <section className="py-12 sm:py-20 bg-gray-50 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
+            <p className="text-base sm:text-xl text-gray-600 max-w-2xl mx-auto">
               Passionate professionals dedicated to delivering excellence and mentoring future developers
             </p>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {teamMembers.map((member, index) => (
               <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow">
                 <div className="relative mb-6">
-                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto flex items-center justify-center">
-                    <Users className="h-12 w-12 text-gray-400" />
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gray-200 rounded-full mx-auto flex items-center justify-center">
+                    <Users className="h-10 w-10 sm:h-12 sm:w-12 text-gray-400" />
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
+                <h3 className="text-lg sm:text-xl font-semibold mb-1">{member.name}</h3>
                 <p className="text-blue-600 font-medium mb-3">{member.role}</p>
                 <p className="text-gray-600 text-sm mb-4">{member.bio}</p>
-                
                 <div className="flex flex-wrap justify-center gap-1 mb-4">
                   {member.skills.map((skill, i) => (
                     <Badge key={i} variant="secondary" className="text-xs">
@@ -325,7 +311,6 @@ export default function About() {
                     </Badge>
                   ))}
                 </div>
-
                 <div className="flex justify-center space-x-3">
                   {member.social.linkedin && (
                     <a href={member.social.linkedin} className="text-gray-400 hover:text-blue-600 transition-colors">
@@ -348,57 +333,52 @@ export default function About() {
       </section>
 
       {/* What Makes Us Different */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="py-12 sm:py-20 bg-white px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
                 What Makes Us Different
               </h2>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-base sm:text-xl text-gray-600 mb-8">
                 We're not just a software company or just a training institute - we're a unique hybrid 
                 that combines both worlds to create exceptional value for our clients and students.
               </p>
-              
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <Code2 className="h-6 w-6 text-blue-600 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Real-World Experience</h3>
+                    <h3 className="font-semibold text-base sm:text-lg mb-1">Real-World Experience</h3>
                     <p className="text-gray-600">Students work on actual client projects, gaining practical experience</p>
                   </div>
                 </div>
-                
                 <div className="flex items-start space-x-4">
                   <Globe className="h-6 w-6 text-blue-600 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Modern Technology Stack</h3>
+                    <h3 className="font-semibold text-base sm:text-lg mb-1">Modern Technology Stack</h3>
                     <p className="text-gray-600">We use cutting-edge technologies that are in high demand</p>
                   </div>
                 </div>
-                
                 <div className="flex items-start space-x-4">
                   <Building className="h-6 w-6 text-blue-600 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Industry Connections</h3>
+                    <h3 className="font-semibold text-base sm:text-lg mb-1">Industry Connections</h3>
                     <p className="text-gray-600">Strong network of companies for placements and partnerships</p>
                   </div>
                 </div>
-                
                 <div className="flex items-start space-x-4">
                   <Award className="h-6 w-6 text-blue-600 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Proven Track Record</h3>
+                    <h3 className="font-semibold text-base sm:text-lg mb-1">Proven Track Record</h3>
                     <p className="text-gray-600">85% placement rate and 95% client satisfaction score</p>
                   </div>
                 </div>
               </div>
             </div>
-            
-            <div className="bg-gradient-to-br from-blue-50 to-gray-50 p-8 rounded-2xl">
+            <div className="bg-gradient-to-br from-blue-50 to-gray-50 p-6 sm:p-8 rounded-2xl mt-8 lg:mt-0">
               <div className="text-center">
-                <Building className="h-16 w-16 text-blue-600 mx-auto mb-6" />
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <Building className="h-12 w-12 sm:h-16 sm:w-16 text-blue-600 mx-auto mb-6" />
+                <h3 className="text-lg sm:text-2xl font-bold text-gray-900 mb-4">
                   Join Our Growing Family
                 </h3>
                 <p className="text-gray-600 mb-6">
@@ -420,12 +400,12 @@ export default function About() {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-20 bg-blue-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+      <section className="py-12 sm:py-20 bg-blue-600 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">
             Ready to Work With Us?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-base sm:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Let's discuss how we can help you achieve your goals, whether you need software development 
             services or want to advance your career in tech.
           </p>
