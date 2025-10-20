@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Menu, X, Code2, Github, Linkedin, Twitter, Mail, Phone, MapPin } from 'lucide-react';
 import { useState } from 'react';
+import Logo from "../images/Logo .png";
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -10,13 +11,9 @@ const navigation = [
   // { name: 'Courses', href: '/courses' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
-
 ];
 
-import Logo from "../images/Logo .png";  
-
-
-export function Layout({ children }: { children: React.ReactNode }) {
+export function Layout({ children }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
@@ -28,14 +25,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-             
-    <div className="flex items-center space-x-2">
-      <img
-        src={Logo}
-        alt="Logo"
-        className="h-10 w-auto sm:h-12 md:h-14"
-      />
-    </div>
+              <div className="flex items-center space-x-2">
+                <img
+                  src={Logo}
+                  alt="Logo"
+                  className="h-10 w-auto sm:h-12 md:h-14"
+                />
+              </div>
             </Link>
 
             {/* Desktop Navigation */}
@@ -56,7 +52,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <Button size="sm">Get Quote</Button>
             </div>
 
-            {/* Mobile menu button */}
+            {/* Mobile Menu Button */}
             <div className="md:hidden">
               <Button
                 variant="ghost"
@@ -100,9 +96,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </nav>
 
       {/* Main Content */}
-      <main className="flex-1">
-        {children}
-      </main>
+      <main className="flex-1">{children}</main>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white">
@@ -115,7 +109,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <span className="text-xl font-bold">DUS</span>
               </div>
               <p className="text-gray-300 mb-6 max-w-md">
-                Innovating Code. Empowering Talent. We specialize in client-based software development, 
+                Innovating Code. Empowering Talent. We specialize in client-based software development,
                 providing cutting-edge solutions and nurturing the next generation of developers.
               </p>
               <div className="flex space-x-4">
@@ -168,6 +162,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
 
+          {/* Bottom Line */}
           <div className="border-t border-gray-800 mt-8 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-sm">
@@ -181,6 +176,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   Terms of Service
                 </Link>
               </div>
+            </div>
+
+            {/* Designed & Developed By */}
+            <div className="text-center mt-6 text-sm text-gray-400">
+              Designed & Developed by{' '}
+              <a
+                href="https://www.linkedin.com/in/tejas-khope/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:underline font-semibold"
+              >
+                Tejas Khope
+              </a>
             </div>
           </div>
         </div>
